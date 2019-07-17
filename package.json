@@ -1,0 +1,50 @@
+{
+  "name": "with-typescript",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm run processCSS && next",
+    "build": "next build",
+    "start": "next start",
+    "processCSS": "npx tailwind build ./static/global.css -o ./static/bundle.css",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "@types/nprogress": "^0.2.0",
+    "@types/styled-components": "^4.1.16",
+    "next": "^9.0.0",
+    "node-sass": "^4.12.0",
+    "nprogress": "^0.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2",
+    "tailwindcss": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.9",
+    "@types/react": "^16.8.15",
+    "@types/react-dom": "^16.0.11",
+    "@typescript-eslint/parser": "^1.11.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.1.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "typescript": "3.5.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts}": [
+      "eslint --fix"
+    ],
+    "*.{ts,json}": [
+      "prettier --check"
+    ]
+  },
+  "license": "ISC"
+}

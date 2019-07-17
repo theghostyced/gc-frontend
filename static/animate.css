@@ -1,0 +1,52 @@
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@keyframes zoomOut {
+from {
+  opacity: 1;
+}
+
+50% {
+  opacity: 0;
+  -webkit-transform: scale3d(0.3, 0.3, 0.3);
+  transform: scale3d(0.3, 0.3, 0.3);
+}
+
+to {
+  opacity: 0;
+}
+}
+
+.zoomOut {
+-webkit-animation-name: zoomOut;
+animation-name: zoomOut;
+}
+
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}

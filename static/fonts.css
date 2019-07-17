@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('./font/webfontkit-20190709-071902/opensans-bold-webfont.woff2') format('woff2'),
+       url('./font/webfontkit-20190709-071902/opensans-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Open Sans ExtraBold';
+  src: url('./font/webfontkit-20190709-071902/opensans-extrabold-webfont.woff2') format('woff2'),
+       url('./font/webfontkit-20190709-071902/opensans-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url('./font/webfontkit-20190709-071902/opensans-light-webfont.woff2') format('woff2'),
+       url('./font/webfontkit-20190709-071902/opensans-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./font/webfontkit-20190709-071902/opensans-regular-webfont.woff2') format('woff2'),
+       url('./font/webfontkit-20190709-071902/opensans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  src: url('./font/opensans-semibold-webfont.woff2') format('woff2'),
+       url('./font/webfontkit-20190709-071902/opensans-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
